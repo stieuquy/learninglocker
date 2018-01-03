@@ -257,8 +257,8 @@ array-slice@^0.2.3:
   resolved "https://registry.yarnpkg.com/array-slice/-/array-slice-0.2.3.tgz#dd3cfb80ed7973a75117cdac69b0b99ec86186f5"
 
 array-slice@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/array-slice/-/array-slice-1.0.0.tgz#e73034f00dcc1f40876008fd20feae77bd4b7c2f"
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/array-slice/-/array-slice-1.1.0.tgz#e368ea15f89bc7069f7ffb89aec3a6c7d4ac22d4"
 
 array-union@^1.0.1:
   version "1.0.2"
@@ -412,9 +412,24 @@ autoprefixer@^6.3.1:
     postcss "^5.2.16"
     postcss-value-parser "^3.2.3"
 
-aws-sdk@^2.100.0, aws-sdk@^2.2.43, aws-sdk@^2.58.0, aws-sdk@^2.74.0, aws-sdk@^2.77.0, aws-sdk@^2.80.0, aws-sdk@^2.97.0:
+aws-sdk@^2.100.0, aws-sdk@^2.2.43, aws-sdk@^2.58.0, aws-sdk@^2.77.0, aws-sdk@^2.97.0:
   version "2.160.0"
   resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.160.0.tgz#87863761503fc42910059149ce5a6e42e1b94d16"
+  dependencies:
+    buffer "4.9.1"
+    crypto-browserify "1.0.9"
+    events "^1.1.1"
+    jmespath "0.15.0"
+    querystring "0.2.0"
+    sax "1.2.1"
+    url "0.10.3"
+    uuid "3.1.0"
+    xml2js "0.4.17"
+    xmlbuilder "4.2.1"
+
+aws-sdk@^2.74.0, aws-sdk@^2.80.0:
+  version "2.164.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.164.0.tgz#e3988657b7c7e96e7ca5a9ff52c90b96b4b229d9"
   dependencies:
     buffer "4.9.1"
     crypto-browserify "1.0.9"
@@ -4362,8 +4377,8 @@ fs-extra@^0.30.0:
     rimraf "^2.2.8"
 
 fs-extra@^4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-4.0.2.tgz#f91704c53d1b461f893452b0c307d9997647ab6b"
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-4.0.3.tgz#0d852122e5bc5beb453fb028e9c0c9bf36340c94"
   dependencies:
     graceful-fs "^4.1.2"
     jsonfile "^4.0.0"
@@ -8130,9 +8145,8 @@ performance-now@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
 
-personas@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/personas/-/personas-1.5.0.tgz#06b13d684b18aa0f97b6dcba1b50281832b1f852"
+"personas@file:../persona-service":
+  version "0.0.0-development"
   dependencies:
     aws-sdk "^2.74.0"
     bluebird "^3.5.0"
